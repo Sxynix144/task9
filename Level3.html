@@ -32,22 +32,23 @@
         transition: transform 0.3s ease;
       }
       
+      
     </style>
   </head>
   <body>
     <div class="container mt-1">
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-body text-center shadow-lg">
               <h2 class="card-title mb-3">
-                JavaScript DOM Manipulation and Events
+                JavaScript: Level Up
               </h2>
               <p class="card-text my-3">
-                Amazing progress! Now you'll learn JavaScript DOM manipulation.
+              
                 Click the "Level Up" button to increase your level dynamically!
               </p>
-              <span class="badge mb-3 bg-info" id="lvlBadge">Level 1</span>
+              <span class="badge mb-3 bg-info" id="lvlBadge">🔯 Level 1</span>
               <div class="level-message mb-4" id="statusMsg">
                 Current Level: 1
               </div>
@@ -79,7 +80,7 @@
       function levelUp() {
         if (count < 6) {
           count++;
-          document.getElementById("lvlBadge").innerText = "Level " + count;
+          document.getElementById("lvlBadge").innerText = "🔯 Level " + count;
           document.getElementById("statusMsg").innerText =
             "Current Level: " + count;
         } else {
